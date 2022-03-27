@@ -1,3 +1,4 @@
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/dead-tech/pre-commit-cmake/main.svg)](https://results.pre-commit.ci/latest/github/dead-tech/pre-commit-cmake/main)
 # pre-commit-cmake
 
 pre-commit hook to build your cmake projects
