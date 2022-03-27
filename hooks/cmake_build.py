@@ -28,7 +28,6 @@ def ext_cmd(*cmd: str) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument('filenames', nargs='*')
     parser.add_argument(
         '--build-dir', default='build/',
         help='path to build dir',

@@ -3,3 +3,5 @@
   description: Configures cmake and builds the project
   entry: cmake-build
   language: python
+  pass_filenames: false
+  always_run: true
