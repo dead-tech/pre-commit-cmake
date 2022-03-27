@@ -1,0 +1,6 @@
+build/
+venv/
+__pycache__/
+dist/
+pre_commit_cmake.*
+tests/example_repo/build/

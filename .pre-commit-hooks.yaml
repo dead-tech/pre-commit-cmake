@@ -1,0 +1,5 @@
+- id: cmake-build
+  name: build cmake project
+  description: Configures cmake and builds the project
+  entry: cmake-build
+  language: python
