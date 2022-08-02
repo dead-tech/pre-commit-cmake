@@ -16,6 +16,7 @@ repos:
 Optional arguments are:
  - --build-dir to change default build directory (build/)
  - --release to call cmake in release mode
+ - --jobs number of jobs to spawn when invoking make (default is 1)
 
 Those arguments can be set like so:
 ```yaml
@@ -24,6 +25,6 @@ repos:
     rev: 'v0.0.3'
     hooks:
       - id: cmake-build
-        args: [--release, '--build-dir <path>']
+        args: [--release, '--build-dir <path>', '--jobs <number>']
 
 ```

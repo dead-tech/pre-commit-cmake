@@ -33,6 +33,10 @@ def main() -> int:
         help='path to build dir',
     )
     parser.add_argument('--release', action='store_true', help='release build')
+    parser.add_argument(
+        '--jobs', default=1, type=int,
+        help='number of jobs to invoke make with',
+    )
     args = parser.parse_args()
 
     build_dir = os.path.abspath(args.build_dir)
@@ -49,7 +53,7 @@ def main() -> int:
         cmake_retval = ext_cmd(
             'cmake', '..', f'-DCMAKE_BUILD_TYPE={build_type}',
         )
-        make_retval = ext_cmd('make')
+        make_retval = ext_cmd('make', f'-j{args.jobs}')
 
     return cmake_retval | make_retval
 
