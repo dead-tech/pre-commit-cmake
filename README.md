@@ -8,7 +8,7 @@ Basic configuration:
 ```yaml
 repos:
   - repo: https://github.com/dead-tech/pre-commit-cmake
-    rev: 'v0.0.3'
+    rev: 'v0.0.4'
     hooks:
       - id: cmake-build
 ```
@@ -22,9 +22,9 @@ Those arguments can be set like so:
 ```yaml
 repos:
   - repo: https://github.com/dead-tech/pre-commit-cmake
-    rev: 'v0.0.3'
+    rev: 'v0.0.4'
     hooks:
       - id: cmake-build
-        args: [--release, '--build-dir <path>', '--jobs <number>']
+        args: [--release, '--build-dir', '<path>', '--jobs', '<number>']
 
 ```
